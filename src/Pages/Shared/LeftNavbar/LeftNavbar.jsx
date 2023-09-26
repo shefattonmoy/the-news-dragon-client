@@ -5,7 +5,7 @@ const LeftNavbar = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('https://the-news-dragon-server-644dx1aab-shefathossain7-gmailcom.vercel.app/categories')
             .then(res => res.json())
             .then(data => setCategories(data))
             .catch(error => console.error(error))
